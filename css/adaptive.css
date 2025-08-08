@@ -7,8 +7,8 @@
 	.relatedProducts .shopItem .shopItemTextWrap p {padding-left: 20px;padding-right: 20px;}
 }
 @media only screen and (max-width: 1259px) {
-	body {min-width: 1004px;}
-	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {width: 1004px;}
+	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {max-width: 1004px;}
+	
 	.mainMenu ul li {margin-left: 20px;}
 	.mainItemDesc {padding: 50px 30px 0;}
 	.mainItemDesc p {margin-bottom: 42px;}
@@ -37,10 +37,10 @@
 	.relatedProducts .shopItem:last-child {display: none;}
 }
 @media only screen and (max-width: 1023px) {
-	body {min-width: 758px;}
+
 	body.animated {left: -258px;}
 	body.animated #header .headerWrap {left: -258px!important;}
-	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {width: 758px;}
+	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {max-width: 758px;}
 	
 	/* Home */
 	#header .headerWrap {height: 60px;border-bottom-color: rgba(0,0,0,0);}
@@ -143,8 +143,8 @@
 
 }
 @media only screen and (max-width: 767px) {
-	body {min-width: 470px;}
-	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {width: 470px;}
+	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {max-width: 470px;}
+	
 	.mainItemImg {float: none;width: 100%;}
 	.mainItem {padding-bottom: 480px;}
 	.mainItemDesc {width: 100%;height: 50%;padding-top: 80px; top: auto;bottom: 0;}
@@ -239,8 +239,8 @@
 	.footerSubscribe {margin-top: 50px;}
 }
 @media only screen and (max-width: 479px) {
-	body {min-width: 310px;}
-	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {width: 310px;}
+	.wrapper, .ourContact .wrapper, .singleProductWrap .wrapper {max-width: 310px;}
+	
 	.single-post .container, .blog .container {padding-top: 20px;}
 
 	.slideDesc h2 {line-height: 34px;font-size: 26px;}

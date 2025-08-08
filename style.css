@@ -56,10 +56,14 @@ fieldset {margin:0;padding:0;border:none;}
 html {height:100%;}
 body, table, input, textarea, select, li, button, p, blockquote, ol, dl, form, pre, th, td, a {
 font-family: 'Lato', sans-serif;font-size: 16px;color:#7f7f7f;}
-body {position:relative;left: 0; min-height:100%;_height:100%;min-width: 1170px;
+body {position:relative;left: 0; min-height:100%;_height:100%;
 -webkit-transition: left 0.6s ease;-moz-transition: left 0.6s ease;-o-transition: left 0.6s ease;transition: left 0.6s ease;
 -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;text-rendering: optimizeLegibility;}
-.wrapper {margin:0 auto;width:1170px;text-align:left;position:relative;}
+
+@media (max-width: 768px) {
+  body { min-width: 0; }
+}
+.wrapper {margin:0 auto;max-width:1170px;text-align:left;position:relative;}
 .clear, #sbi_images {clear: none!important;}
 .clear:after, #sbi_images:after {display: block;height: 0;visibility: hidden;clear: both;content: ".";}
 
@@ -235,7 +239,7 @@ transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease,left 0.
 .postItem:hover h4 a {color: #5fc7ae;}
 .postItem p {line-height: 24px;padding: 0 36px; color: #7f7f7f;font-size: 16px;font-weight: 400;}
 
-.classesBox {height: 560px;width: 100%;padding-top: 157px; background-attachment: fixed;background-repeat: no-repeat;background-size: cover; background-position: 50% 0;text-align: center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing: border-box;}
+.classesBox {min-height: 560px;width: 100%;padding-top: 157px; background-attachment: fixed;background-repeat: no-repeat;background-size: cover; background-position: 50% 0;text-align: center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing: border-box;}
 .classesCategory {display: inline-block;margin-bottom: 25px; line-height: 25px;padding: 0 10px;background: #5fc7ae; color: #fff;font-size: 12px;font-family: 'Montserrat', sans-serif;text-transform: uppercase;text-decoration: none;}
 .classesBox h3 {line-height: 56px;margin-bottom: 39px; color: #fff;font-size: 42px;font-weight: 300;text-transform: uppercase;}
 
@@ -342,6 +346,14 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 }
 
 @media (max-width: 768px) {
+  .classesBox {
+    padding-top: 60px;
+  }
+
+  #footer2 {
+    padding-top: 20px;
+  }
+
   .footer2-container {
     flex-direction: column;
     text-align: center;
@@ -349,7 +361,6 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 
   .footer2-col {
     margin-bottom: 5px;
-	
   }
 
   .whatsapp-link {
@@ -415,7 +426,7 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 .ourValues {}
 .parallaxBox {position: relative; height: 560px;width: 100%;padding-top: 157px; background-attachment: fixed;background-repeat: no-repeat;background-size: cover;background-position: center center;text-align: center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing: border-box;}
 .parallaxBox h3 {position: absolute;top: 50%;left: 0;width: 100%; line-height: 56px;margin-top: -28px; color: #fff;font-size: 42px;font-weight: 300;text-transform: uppercase;}
-.ourValues .wrapper {width: 570px;padding: 65px 0;}
+.ourValues .wrapper {max-width: 570px;margin:0 auto;padding: 65px 0;}
 .ourValues .wrapper p {line-height: 30px;color: #7f7f7f;font-size: 16px;font-family: 'Lato', sans-serif;font-weight: 300;text-align: center;}
 
 .sb_instagram_header {padding: 34px 0 34px; background: #5fc7ae;text-align: center;-webkit-transition: background 0.3s ease;-moz-transition: background 0.3s ease;-o-transition: background 0.3s ease;transition: background 0.3s ease;}
@@ -439,7 +450,7 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 .blog .postItem {height: 470px; margin-bottom: 30px;border-bottom: 1px solid #e9e9e9; background: #fff;}
 
 /* Single post */
-.single-post .wrapper {width: 770px;}
+.single-post .wrapper {max-width: 770px;margin:0 auto;}
 .singlePostWrap h1, .singlePostWrap h2, .singlePostWrap h3, .singlePostWrap h4, .singlePostWrap h5 {position: relative; line-height: 66px;margin-bottom: 100px; color: #333333;font-size: 56px;font-family: 'Lato', sans-serif;font-weight: 300;text-align: center;}
 .singlePostWrap h1:before {position: absolute;left: 50%;bottom: -50px;width: 46px;height: 1px;margin-left: -23px; background: #5fc7ae;content: "";}
 .singlePostWrap h2 {line-height: 50px;margin-bottom: 22px;margin-top: 32px; font-size: 46px;text-align: left;}
@@ -476,7 +487,7 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 .singlePostWrap blockquote p a, .singlePostWrap blockquote p a:visited {color: #5fc7ae;font-size: 20px;font-family: 'Lato', sans-serif;font-weight: 300;text-decoration: none;}
 
 
-.single-post .wrapper2 {width: 770px;}
+.single-post .wrapper2 {max-width: 770px;margin:0 auto;}
 .singlePostWrap2 h1, .singlePostWrap2 h2, .singlePostWrap2 h3, .singlePostWrap2 h4, .singlePostWrap2 h5 {position: relative; line-height: 66px;margin-bottom: 100px; color: #333333;font-size: 56px;font-family: 'Lato', sans-serif;font-weight: 300;text-align: center;}
 .singlePostWrap2 h1:before {position: absolute;left: 50%;bottom: -50px;width: 46px;height: 1px;margin-left: -23px; background: #5fc7ae;content: "";}
 .singlePostWrap2 h2 {line-height: 50px;margin-bottom: 22px;margin-top: 32px; font-size: 46px;text-align: left;}
@@ -532,7 +543,7 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 .relatedPosts .blockTitle {padding-top: 0;}
 
 /* Contact */
-.ourContact .wrapper {width: 1170px;padding: 140px 0;}
+.ourContact .wrapper {max-width: 1170px;margin:0 auto;padding: 140px 0;}
 .contactGallery {float: left;width: 570px;}
 .contactInfo {float: right;width: 500px;}
 .contactInfo p {position: relative;padding-left: 56px;}
@@ -643,7 +654,7 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 .subscribeSubmit:hover {background: #70d3bb;border-color: #70d3bb;}
 
 /* Single event */
-.single-event .wrapper {width: 770px;}
+.single-event .wrapper {max-width: 770px;margin:0 auto;}
 .single-event .pagePanel {margin-bottom: 59px;}
 .single-event .shareSinglePost {padding-top: 29px; margin-bottom: 60px;}
 .backToBtn, .backToBtn:visited {display: block;position: relative; float: left;line-height: 12px;margin-top: 30px; padding-left: 18px;color: #7f7f7f;font-size: 12px;font-family: 'Lato', sans-serif;font-weight: 400;text-transform: uppercase;text-decoration: none;-webkit-transition: color 0.3s ease;-moz-transition: color 0.3s ease;-o-transition: color 0.3s ease;transition: color 0.3s ease;}
@@ -766,7 +777,7 @@ span.price span {position: relative;top: -11px;left: -2px; font-size: 14px;}
 .single-product {background: #f4f4f4;}
 .single-product .pagePanel {margin-bottom: 0;}
 .singleProductWrap {padding: 60px 0; background: #fff;}
-.singleProductWrap .wrapper {width: 1220px;}
+.singleProductWrap .wrapper {max-width: 1220px;margin:0 auto;}
 
 .productGallery {float: left;width: 680px;}
 .galleryThumb {float: left;width: 120px;}
